@@ -17,12 +17,7 @@
 	<div class="px-5 sm:px-7 md:px-8 lg:px-15 xl:px-15 pt-10 w-full min-w-[320px] max-w-[1680px]">
 		<Header />
 
-		<Project
-			title="PORTFOLIO WEBSITE"
-			description="A magazine-style portfolio built collaboratively with Claude AI in under 10 hours. This project demonstrates the detailed, iterative process of creating a modern developer portfolio through progressive prompting and human-AI collaboration."
-			techStack={['SvelteKit', 'TailwindCSS', 'DaisyUI', 'TypeScript']}
-			category="FEATURED"
-		>
+		<Project id="portfolio">
 			<!-- Portfolio-specific content with responsive design -->
 			<div class="w-full">
 				<h2 class="mb-6 lg:mb-8 heading-h3">The Making Of: A Detailed Development Process</h2>

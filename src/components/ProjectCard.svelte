@@ -51,17 +51,17 @@
 	</h3>
 
 	<!-- Project Description - Mobile First: py-4 min-h-20, md: py-5 min-h-24, lg: py-5 min-h-25 (20px/100px spec) -->
-	<div class="py-4 md:py-5 lg:py-5 min-h-20 md:min-h-40">
+	<div class="py-4 md:py-5 lg:py-5">
 		<p class="text-default">
 			{project.description}
 		</p>
 	</div>
 
-	<!-- Tech Stack - Mobile First: py-6, md: py-8, lg: py-10 (40px spec) -->
+	<!-- Features - Mobile First: py-6, md: py-8, lg: py-10 (40px spec) -->
 	<div class="py-6 md:py-8 lg:py-10">
-		{#if project.techStack.length > 0}
-			<span class="text-small-600">Tech Stack: </span>
-			<span class="text-small">{project.techStack.join(', ')}</span>
+		{#if project.features.length > 0}
+			<span class="text-small-600">Features: </span>
+			<span class="text-small">{project.features.join(', ')}</span>
 		{/if}
 	</div>
 </section>
