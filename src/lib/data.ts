@@ -123,7 +123,7 @@ export const projects: Project[] = [
 		tags: ['experiments'],
 		order: 5,
 		image: '/photosnap.png',
-		link: 'https://photosnap-react-website.vercel.app',
+		link: 'https://github.com/iknowmagic/photosnap-multi-page-website',
 		github: 'https://github.com/iknowmagic/photosnap-multi-page-website'
 	},
 	{
@@ -182,7 +182,7 @@ export const projects: Project[] = [
 		tags: ['experiments'],
 		order: 2,
 		image: '/myteam.png',
-		link: 'https://myteam-multi-page-website.vercel.app/',
+		link: 'https://github.com/iknowmagic/myteam-multi-page-website',
 		github: 'https://github.com/iknowmagic/myteam-website'
 	},
 	{
@@ -202,7 +202,7 @@ export const projects: Project[] = [
 		tags: ['experiments'],
 		order: 1,
 		image: '/rock.png',
-		link: 'https://rock-paper-scissors-lizard-spock.vercel.app',
+		link: 'https://rock-paper-scissors-ten-flax.vercel.app',
 		github: 'https://github.com/iknowmagic/rock-paper-scissors'
 	}
 ];
