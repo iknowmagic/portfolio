@@ -19,7 +19,7 @@
 			href={project.link}
 			target={isExternalLink ? '_blank' : undefined}
 			rel={isExternalLink ? 'noopener noreferrer' : undefined}
-			class="block hover:bg-gray-50 p-6 md:p-8 lg:p-10 transition-colors"
+			class="block hover:bg-gray-50 p-6 md:p-12 lg:p-10 pt-12 transition-colors"
 			aria-label="View {project.title} project"
 		>
 			<!-- External Link Icon - positioned absolutely in top-right -->
