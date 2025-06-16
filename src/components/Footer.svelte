@@ -10,7 +10,7 @@
 	<div class="gap-6 lg:gap-8 grid grid-cols-1 lg:grid-cols-3">
 		<!-- First section: Name -->
 		<div>
-			<h3 class="text-inverse heading-h5">ILAN KAIM</h3>
+			<img src="/cod3naut.png" alt="logo" class="invert mb-4 w-48" />
 		</div>
 
 		<!-- Second section: Categories - Mobile First: py-6, md: py-8, lg: py-10 (40px spec) -->

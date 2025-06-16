@@ -83,7 +83,7 @@ export const projects: Project[] = [
 		],
 		tags: ['featured'],
 		order: 7,
-		image: '/placeholder-json.jpg',
+		image: '/graph.png',
 		link: 'https://json-visualizer-sooty.vercel.app',
 		github: 'https://github.com/iknowmagic/json-visualizer'
 	},
@@ -102,7 +102,7 @@ export const projects: Project[] = [
 		],
 		tags: ['featured'],
 		order: 6,
-		image: '/placeholder-lander.jpg',
+		image: '/lander.gif',
 		link: 'https://github.com/iknowmagic/dqn_lunar_lander',
 		github: 'https://github.com/iknowmagic/dqn_lunar_lander'
 	},

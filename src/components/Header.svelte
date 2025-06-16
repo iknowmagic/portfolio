@@ -5,7 +5,9 @@
 <!-- Header - Mobile First: py-6, Desktop: py-6 (25px spec) -->
 <header class="flex lg:flex-row flex-col lg:justify-between lg:items-center gap-4 py-6">
 	<!-- Left: Name -->
-	<h1 class="heading-h5">ILAN KAIM</h1>
+	<a href="/" class="flex items-center space-x-2">
+		<img src="/cod3naut.png" alt="logo" class="w-auto h-10" />
+	</a>
 
 	<!-- Right: Navigation and Social -->
 	<div class="flex lg:flex-row flex-col lg:items-center gap-4 lg:gap-8">
