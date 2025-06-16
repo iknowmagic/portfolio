@@ -26,7 +26,7 @@ export const projects: Project[] = [
 		],
 		tags: ['featured'],
 		order: 11,
-		image: '/placeholder-zombie.jpg',
+		image: '/zombie-walk.png',
 		link: 'https://youtu.be/05wbf7HdjQY'
 	},
 	{
@@ -45,8 +45,8 @@ export const projects: Project[] = [
 		],
 		tags: ['featured'],
 		order: 10,
-		image: '/placeholder-music.jpg',
-		link: 'https://www.citybeat.com/news/cincinnati-reindustrialization-plan-dance–12164960'
+		image: '/quorum.png',
+		link: 'https://www.citybeat.com/news/cincinnati-reindustrialization-plan-dance--12164960'
 	},
 	{
 		id: 'portfolio',
@@ -103,6 +103,7 @@ export const projects: Project[] = [
 		tags: ['featured'],
 		order: 7,
 		image: '/placeholder-json.jpg',
+		link: 'https://json-visualizer-sooty.vercel.app',
 		github: 'https://github.com/iknowmagic/json-visualizer'
 	},
 	{
@@ -121,6 +122,7 @@ export const projects: Project[] = [
 		tags: ['featured'],
 		order: 6,
 		image: '/placeholder-lander.jpg',
+		link: 'https://github.com/iknowmagic/dqn_lunar_lander',
 		github: 'https://github.com/iknowmagic/dqn_lunar_lander'
 	},
 	{

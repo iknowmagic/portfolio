@@ -19,7 +19,7 @@
 
 		<!-- Hero Section - Mobile First: py-8, md: py-10, lg: py-10 (40px spec) -->
 		<section class="py-8 md:py-10 lg:py-10">
-			<h1 class="hero-title">ILAN KAIM</h1>
+			<h1 class="heading-large">ILAN KAIM</h1>
 		</section>
 
 		<Projects />

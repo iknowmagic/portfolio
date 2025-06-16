@@ -19,11 +19,5 @@
 		>
 			<Linkedin size={20} />
 		</a>
-		<a href="#" class="hover:opacity-60 transition-opacity icon-inverse">
-			<Twitter size={20} />
-		</a>
-		<a href="#" class="hover:opacity-60 transition-opacity icon-inverse">
-			<Instagram size={20} />
-		</a>
 	</div>
 </div>
