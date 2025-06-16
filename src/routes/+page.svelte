@@ -12,17 +12,14 @@
 	/>
 </svelte:head>
 
-<!-- Page Container with flex centering -->
+<!-- Page Container with Mobile-First Responsive Design -->
 <div class="flex justify-center min-h-screen">
-	<div class="page-container">
+	<div class="px-5 sm:px-7 md:px-8 lg:px-15 xl:px-15 pt-10 w-full min-w-[320px] max-w-[1680px]">
 		<Header />
 
-		<!-- Divider Line -->
-		<div class="divider divider-neutral"></div>
-
-		<!-- Hero Section -->
-		<section style="padding: 40px 0;">
-			<h1 class="hero-title">ILAN KAIM</h1>
+		<!-- Hero Section - Mobile First: py-8, md: py-10, lg: py-10 (40px spec) -->
+		<section class="py-8 md:py-10 lg:py-10">
+			<h1 class="heading-large">ILAN KAIM</h1>
 		</section>
 
 		<Projects />
@@ -32,30 +29,11 @@
 </div>
 
 <style>
-	.page-container {
-		max-width: 1680px;
-		min-width: 320px;
-		width: 100%;
-		padding: 40px 60px 0 60px;
-	}
-
 	.hero-title {
 		font-size: clamp(3rem, 12vw, 8rem);
 		font-weight: 600;
 		line-height: 1;
 		letter-spacing: -0.02em;
 		width: 100%;
-	}
-
-	@media (max-width: 768px) {
-		.page-container {
-			padding: 40px 30px 0 30px;
-		}
-	}
-
-	@media (max-width: 480px) {
-		.page-container {
-			padding: 40px 20px 0 20px;
-		}
 	}
 </style>

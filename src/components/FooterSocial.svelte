@@ -2,20 +2,22 @@
 	import { Github, Linkedin, Twitter, Instagram } from 'lucide-svelte';
 </script>
 
-<!-- Social Icons Section -->
-<div class="flex justify-end" style="padding: 40px 0;">
+<!-- Social Icons Section - Mobile First: py-6, md: py-8, lg: py-10 (40px spec) -->
+<div class="flex justify-center lg:justify-end py-6 md:py-8 lg:py-10">
 	<div class="flex gap-4">
-		<a href="https://github.com/iknowmagic" target="_blank" class="icon-inverse">
+		<a
+			href="https://github.com/iknowmagic"
+			target="_blank"
+			class="hover:opacity-60 transition-opacity icon-inverse"
+		>
 			<Github size={20} />
 		</a>
-		<a href="https://linkedin.com/in/cod3naut" target="_blank" class="icon-inverse">
+		<a
+			href="https://linkedin.com/in/cod3naut"
+			target="_blank"
+			class="hover:opacity-60 transition-opacity icon-inverse"
+		>
 			<Linkedin size={20} />
-		</a>
-		<a href="#" class="icon-inverse">
-			<Twitter size={20} />
-		</a>
-		<a href="#" class="icon-inverse">
-			<Instagram size={20} />
 		</a>
 	</div>
 </div>

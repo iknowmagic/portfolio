@@ -54,6 +54,8 @@
 		]
 	},
 	"dependencies": {
-		"lucide-svelte": "^0.515.0"
+		"@michaelallenwarner/tailwind-grid-inner": "^1.0.3",
+		"lucide-svelte": "^0.515.0",
+		"mdsvex": "^0.12.6"
 	}
 }

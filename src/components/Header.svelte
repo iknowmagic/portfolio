@@ -2,34 +2,36 @@
 	import { Github, Linkedin, Twitter, Instagram } from 'lucide-svelte';
 </script>
 
-<!-- Header -->
-<header class="flex justify-between items-center" style="padding: 25px 0;">
+<!-- Header - Mobile First: py-6, Desktop: py-6 (25px spec) -->
+<header class="flex lg:flex-row flex-col lg:justify-between lg:items-center gap-4 py-6">
 	<!-- Left: Name -->
-	<h1 class="heading-h5">ILAN KAIM</h1>
+	<a href="/" class="flex items-center space-x-2">
+		<img src="/cod3naut.png" alt="logo" class="w-auto h-10" />
+	</a>
 
 	<!-- Right: Navigation and Social -->
-	<div class="flex items-center gap-8">
+	<div class="flex lg:flex-row flex-col lg:items-center gap-4 lg:gap-8">
 		<!-- Navigation Links -->
-		<nav class="flex gap-6">
-			<a href="#" class="text-medium">Magazine</a>
-			<a href="#" class="text-medium">Authors</a>
-			<a href="#" class="text-medium">Podcast</a>
-		</nav>
+		<nav class="flex gap-4 lg:gap-6"></nav>
 
 		<!-- Social Icons -->
 		<div class="flex gap-4">
-			<a href="https://github.com/iknowmagic" target="_blank" class="icon-default">
+			<a
+				href="https://github.com/iknowmagic"
+				target="_blank"
+				class="hover:opacity-60 transition-opacity icon-default"
+			>
 				<Github size={20} />
 			</a>
-			<a href="https://linkedin.com/in/cod3naut" target="_blank" class="icon-default">
+			<a
+				href="https://linkedin.com/in/cod3naut"
+				target="_blank"
+				class="hover:opacity-60 transition-opacity icon-default"
+			>
 				<Linkedin size={20} />
-			</a>
-			<a href="#" class="icon-default">
-				<Twitter size={20} />
-			</a>
-			<a href="#" class="icon-default">
-				<Instagram size={20} />
 			</a>
 		</div>
 	</div>
 </header>
+
+<div class="divider divider-neutral" />
