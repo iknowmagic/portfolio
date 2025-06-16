@@ -49,25 +49,6 @@ export const projects: Project[] = [
 		link: 'https://www.citybeat.com/news/cincinnati-reindustrialization-plan-dance--12164960'
 	},
 	{
-		id: 'portfolio',
-		title: 'Portfolio Website',
-		description:
-			'A magazine-style portfolio built collaboratively with Claude AI in under 10 hours. Shows the detailed, progressive process of creating a modern developer portfolio.',
-		features: [
-			'SvelteKit',
-			'TailwindCSS',
-			'DaisyUI',
-			'TypeScript',
-			'Mobile-First Design',
-			'Component Architecture'
-		],
-		tags: ['featured'],
-		order: 9,
-		image: '/placeholder-portfolio.jpg',
-		link: '/portfolio',
-		github: 'https://github.com/iknowmagic/portfolio'
-	},
-	{
 		id: 'whatstherush',
 		title: "What's The Rush?",
 		description:
@@ -82,7 +63,7 @@ export const projects: Project[] = [
 		],
 		tags: ['featured'],
 		order: 8,
-		image: '/placeholder-whatstherush.jpg',
+		image: '/planet.png',
 		link: 'https://whatstherush.tech',
 		github: 'https://github.com/iknowmagic/whatstherush'
 	},

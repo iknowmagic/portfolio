@@ -10,11 +10,7 @@
 	<!-- Right: Navigation and Social -->
 	<div class="flex lg:flex-row flex-col lg:items-center gap-4 lg:gap-8">
 		<!-- Navigation Links -->
-		<nav class="flex gap-4 lg:gap-6">
-			<a href="#" class="hover:opacity-60 text-medium transition-opacity">Magazine</a>
-			<a href="#" class="hover:opacity-60 text-medium transition-opacity">Authors</a>
-			<a href="#" class="hover:opacity-60 text-medium transition-opacity">Podcast</a>
-		</nav>
+		<nav class="flex gap-4 lg:gap-6"></nav>
 
 		<!-- Social Icons -->
 		<div class="flex gap-4">
