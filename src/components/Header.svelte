@@ -33,3 +33,5 @@
 		</div>
 	</div>
 </header>
+
+<div class="divider divider-neutral" />

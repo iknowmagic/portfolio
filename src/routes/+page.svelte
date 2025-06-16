@@ -17,9 +17,6 @@
 	<div class="page-container">
 		<Header />
 
-		<!-- Divider Line -->
-		<div class="divider divider-neutral"></div>
-
 		<!-- Hero Section -->
 		<section style="padding: 40px 0;">
 			<h1 class="hero-title">ILAN KAIM</h1>

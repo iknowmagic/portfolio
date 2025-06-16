@@ -12,6 +12,18 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
+		id: 'portfolio',
+		title: 'Portfolio Website',
+		description:
+			'A magazine-style portfolio built collaboratively with Claude AI in under 10 hours. Shows the detailed, progressive process of creating a modern developer portfolio.',
+		techStack: ['SvelteKit', 'TailwindCSS', 'DaisyUI', 'TypeScript'],
+		tags: ['featured'],
+		order: 11,
+		image: '/placeholder-portfolio.jpg',
+		link: '/portfolio',
+		github: 'https://github.com/iknowmagic/portfolio'
+	},
+	{
 		id: 'whatstherush',
 		title: "What's The Rush?",
 		description:

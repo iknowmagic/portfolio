@@ -43,83 +43,14 @@
 	</div>
 </section>
 
-<!-- Projects Container with border -->
-<section class="border border-default" style="margin-bottom: 200px;">
+<!-- Projects Container - Individual borders approach -->
+<section style="margin-bottom: 200px;">
 	<!-- Projects Grid Container -->
-	<div class="projects-grid">
+	<div class="sm:grid-inner-1 md:grid-inner-2 lg:grid-inner-3 border-2 border-black">
 		{#each filteredProjects as project, index}
-			<ProjectCard {project} />
+			<div class="">
+				<ProjectCard {project} />
+			</div>
 		{/each}
 	</div>
 </section>
-
-<style>
-	/* Projects Grid Layout - Table-like structure */
-	.projects-grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.projects-grid :global(article) {
-		border-right: 1px solid var(--border--default);
-		border-bottom: 1px solid var(--border--default);
-	}
-
-	/* Remove borders on edges to avoid double borders with container */
-	.projects-grid :global(article:nth-child(3n)) {
-		border-right: none;
-	}
-
-	.projects-grid :global(article:nth-last-child(-n + 3)) {
-		border-bottom: none;
-	}
-
-	/* Responsive adjustments */
-	@media (max-width: 1024px) {
-		.projects-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
-
-		.projects-grid :global(article:nth-child(3n)) {
-			border-right: 1px solid var(--border--default);
-		}
-
-		.projects-grid :global(article:nth-child(2n)) {
-			border-right: none;
-		}
-
-		.projects-grid :global(article:nth-last-child(-n + 3)) {
-			border-bottom: 1px solid var(--border--default);
-		}
-
-		.projects-grid :global(article:nth-last-child(-n + 2)) {
-			border-bottom: none;
-		}
-	}
-
-	@media (max-width: 768px) {
-		.projects-grid {
-			grid-template-columns: repeat(1, 1fr);
-		}
-
-		.projects-grid :global(article) {
-			border-right: none;
-			border-bottom: 1px solid var(--border--default);
-		}
-
-		.projects-grid :global(article:last-child) {
-			border-bottom: none;
-		}
-	}
-
-	/* Override DaisyUI button styles to maintain monochrome design */
-	.btn {
-		background-color: white;
-		color: var(--text--default);
-	}
-
-	.btn:hover {
-		background-color: var(--background--primary);
-		color: var(--text--inverse);
-	}
-</style>

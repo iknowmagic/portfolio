@@ -6,9 +6,29 @@
 	function getProjectTag(project: Project) {
 		return project.tags[0] || 'featured';
 	}
+
+	function handleClick() {
+		if (project.link) {
+			if (project.link.startsWith('/')) {
+				// Internal link - use SvelteKit navigation
+				window.location.href = project.link;
+			} else {
+				// External link - open in new tab
+				window.open(project.link, '_blank');
+			}
+		}
+	}
 </script>
 
-<article style="padding: 40px;">
+<section
+	style="padding: 40px;"
+	class="hover:bg-gray-50 transition-colors"
+	on:click={handleClick}
+	on:keydown={(e) => e.key === 'Enter' && handleClick()}
+	tabindex="0"
+	role="button"
+	aria-label="View {project.title} project"
+>
 	<!-- Card Navigation Section -->
 	<div class="flex justify-end">
 		<span
@@ -45,4 +65,4 @@
 			<span class="text-small">{project.techStack.join(', ')}</span>
 		{/if}
 	</div>
-</article>
+</section>
