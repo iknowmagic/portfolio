@@ -15,32 +15,32 @@
 		.slice(0, 3);
 </script>
 
-<!-- Go Back Section -->
-<section style="padding: 25px 0;">
+<!-- Go Back Section - Mobile First: py-6, Desktop: py-6 (25px spec) -->
+<section class="py-6">
 	<a href="/" class="flex items-center gap-2 hover:opacity-60 text-small transition-opacity">
 		<ArrowLeft size={16} />
 		GO BACK
 	</a>
 </section>
 
-<!-- Hero Section -->
-<section style="padding: 80px 0;">
-	<div class="items-start gap-8 grid grid-cols-1 lg:grid-cols-2">
+<!-- Hero Section - Mobile First: py-12, md: py-16, lg: py-20 (80px spec) -->
+<section class="py-12 md:py-16 lg:py-20">
+	<div class="items-start gap-6 lg:gap-8 grid grid-cols-1 lg:grid-cols-2">
 		<!-- Left: Project Title -->
 		<div>
 			<h1 class="uppercase heading-large">{title}</h1>
 		</div>
 
-		<!-- Right: Description -->
-		<div style="padding: 0 40px;">
+		<!-- Right: Description - Mobile First: px-0, lg: px-10 (40px spec) -->
+		<div class="px-0 lg:px-10">
 			<p class="text-medium-500">{description}</p>
 		</div>
 	</div>
 </section>
 
-<!-- Tech Stack & Category Section -->
-<section style="padding: 25px 0;">
-	<div class="flex justify-between items-center">
+<!-- Tech Stack & Category Section - Mobile First: py-6, Desktop: py-6 (25px spec) -->
+<section class="py-6">
+	<div class="flex lg:flex-row flex-col lg:justify-between lg:items-center gap-4">
 		<!-- Left: Tech Stack -->
 		<div>
 			<span class="text-small-600">Tech Stack: </span>
@@ -56,17 +56,17 @@
 	</div>
 </section>
 
-<!-- Project Content Slot -->
-<section style="padding: 80px 0 150px 0;">
+<!-- Project Content Slot - Mobile First: py-12 pb-24, md: py-16 pb-32, lg: py-20 pb-37 (80px/150px spec) -->
+<section class="py-12 md:py-16 lg:py-20 pb-24 md:pb-32 lg:pb-37">
 	<slot />
 </section>
 
-<!-- Latest Projects Section -->
-<section style="padding: 50px 0; margin-top: 100px;">
+<!-- Latest Projects Section - Mobile First: py-12 mt-16, md: py-14 mt-20, lg: py-12 mt-25 (50px/100px spec) -->
+<section class="mt-16 md:mt-20 lg:mt-25 py-12 md:py-14 lg:py-12">
 	<div class="divider"></div>
 
-	<div style="padding: 50px 0;">
-		<div class="flex justify-between items-center mb-8">
+	<div class="py-12 md:py-14 lg:py-12">
+		<div class="flex lg:flex-row flex-col lg:justify-between lg:items-center gap-6 mb-6 lg:mb-8">
 			<!-- Left: Latest Projects Title -->
 			<h2 class="uppercase heading-large">LATEST PROJECTS</h2>
 
@@ -78,9 +78,9 @@
 		</div>
 
 		<!-- Latest Projects Grid -->
-		<div class="gap-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-default">
-			{#each latestProjects as project, index}
-				<div class="border-default border-r last:border-r-0">
+		<div class="grid-inner-1 md:grid-inner-2 lg:grid-inner-3 border border-default">
+			{#each latestProjects as project}
+				<div>
 					<ProjectCard {project} />
 				</div>
 			{/each}
