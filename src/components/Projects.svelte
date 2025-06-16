@@ -21,16 +21,16 @@
 </script>
 
 <!-- Projects Navigation -->
-<section style="padding: 60px 0;">
-	<div class="flex justify-between items-center">
+<section class="py-12 lg:py-15">
+	<div class="flex lg:flex-row flex-col lg:justify-between lg:items-center gap-6">
 		<!-- Left: Projects Title -->
 		<h2 class="heading-h3">PROJECTS</h2>
 
 		<!-- Right: Filter Pills -->
-		<div class="flex gap-3">
+		<div class="flex flex-wrap gap-3">
 			{#each filters as filter}
 				<button
-					class="border border-default rounded-full text-small btn btn-sm"
+					class="hover:bg-black border border-default hover:border-black rounded-full hover:text-white text-small transition-colors btn btn-sm"
 					class:bg-black={selectedFilter === filter}
 					class:text-white={selectedFilter === filter}
 					class:border-black={selectedFilter === filter}
@@ -43,12 +43,12 @@
 	</div>
 </section>
 
-<!-- Projects Container - Individual borders approach -->
-<section style="margin-bottom: 200px;">
-	<!-- Projects Grid Container -->
-	<div class="sm:grid-inner-1 md:grid-inner-2 lg:grid-inner-3 border-2 border-black">
-		{#each filteredProjects as project, index}
-			<div class="">
+<!-- Projects Grid Container -->
+<section class="mb-32 lg:mb-50">
+	<!-- Clean Grid using grid-inner plugin -->
+	<div class="grid-inner-1 md:grid-inner-2 lg:grid-inner-3 border-2 border-black">
+		{#each filteredProjects as project}
+			<div>
 				<ProjectCard {project} />
 			</div>
 		{/each}
