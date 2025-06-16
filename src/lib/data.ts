@@ -122,7 +122,7 @@ export const projects: Project[] = [
 		],
 		tags: ['experiments'],
 		order: 5,
-		image: '/placeholder-photosnap.jpg',
+		image: '/photosnap.png',
 		link: 'https://photosnap-react-website.vercel.app',
 		github: 'https://github.com/iknowmagic/photosnap-multi-page-website'
 	},
@@ -141,7 +141,7 @@ export const projects: Project[] = [
 		],
 		tags: ['experiments'],
 		order: 4,
-		image: '/placeholder-clock.jpg',
+		image: '/clock.jpg',
 		link: 'http://clock-app-eta.vercel.app/',
 		github: 'https://github.com/iknowmagic/clock-app'
 	},
@@ -161,7 +161,7 @@ export const projects: Project[] = [
 		],
 		tags: ['experiments'],
 		order: 3,
-		image: '/placeholder-pomodoro.jpg',
+		image: '/pomodoro.png',
 		link: 'https://pomodoro-app-three.vercel.app',
 		github: 'https://github.com/iknowmagic/pomodoro-timer'
 	},
@@ -181,7 +181,7 @@ export const projects: Project[] = [
 		],
 		tags: ['experiments'],
 		order: 2,
-		image: '/placeholder-myteam.jpg',
+		image: '/myteam.png',
 		link: 'https://myteam-multi-page-website.vercel.app/',
 		github: 'https://github.com/iknowmagic/myteam-website'
 	},
@@ -201,7 +201,7 @@ export const projects: Project[] = [
 		],
 		tags: ['experiments'],
 		order: 1,
-		image: '/placeholder-rps.jpg',
+		image: '/rock.png',
 		link: 'https://rock-paper-scissors-lizard-spock.vercel.app',
 		github: 'https://github.com/iknowmagic/rock-paper-scissors'
 	}
