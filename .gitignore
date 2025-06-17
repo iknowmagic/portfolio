@@ -217,3 +217,4 @@ vite.config.ts.timestamp-*
 
 # End of https://www.toptal.com/developers/gitignore/api/node,macos,svelte,vercel,visualstudiocode,dotenv
 *output.xml*
+diff.txt
