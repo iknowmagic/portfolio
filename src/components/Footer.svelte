@@ -1,13 +1,13 @@
 <script lang="ts">
   import FooterSocial from './FooterSocial.svelte';
-  import { projects } from '$lib/data';
+  import { projects, type Project } from '$lib/data';
 
   // Group projects by tags for footer display
   $: featuredProjects = projects.filter((p) => p.tags.includes('featured')).slice(0, 5);
   $: experimentProjects = projects.filter((p) => p.tags.includes('experiments')).slice(0, 5);
 
   // Helper function to get primary link (same priority as ProjectLink)
-  function getPrimaryLink(project) {
+  function getPrimaryLink(project: Project) {
     // Priority: live > github > video > article
     if (project.links.live) return project.links.live;
     if (project.links.github) return project.links.github;
