@@ -56,11 +56,11 @@
 
     <!-- Hover Overlay -->
     <div
-      class="absolute inset-0 flex flex-col justify-center items-center bg-black/80 opacity-0 group-hover:opacity-100 h-full transition-opacity duration-200"
+      class="-left-px absolute inset-0 flex flex-col justify-center items-center bg-black/80 opacity-0 group-hover:opacity-100 h-full transition-opacity duration-200"
     >
       {#if mediaDisplay}
         <!-- Icon -->
-        <svelte:component this={mediaDisplay.icon} size={32} class="mb-2 text-white" />
+        <svelte:component this={mediaDisplay.icon} size={48} class="mb-2 text-white" />
 
         <!-- Label -->
         <span class="font-medium text-white text-small uppercase tracking-wide">
