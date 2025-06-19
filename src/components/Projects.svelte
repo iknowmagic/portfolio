@@ -25,7 +25,7 @@
 <section class="py-12 lg:py-15">
   <div class="flex lg:flex-row flex-col lg:justify-between lg:items-center gap-6">
     <!-- Left: Projects Title -->
-    <h2 class="heading-h3">PROJECTS</h2>
+    <h2 class="font-[600] text-2xl">PROJECTS</h2>
 
     <!-- Right: Filter Pills -->
     <div class="flex flex-wrap gap-3">
