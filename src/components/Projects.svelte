@@ -31,7 +31,7 @@
     <div class="flex flex-wrap gap-3">
       {#each filters as filter}
         <button
-          class="hover:bg-black border border-default hover:border-black rounded-full hover:text-white text-small transition-colors btn btn-sm"
+          class="rounded-full btn-outline btn btn-sm hover:btn-neutral"
           class:bg-black={selectedFilter === filter}
           class:text-white={selectedFilter === filter}
           class:border-black={selectedFilter === filter}
