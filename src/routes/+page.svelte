@@ -2,6 +2,7 @@
 	import Header from '$components/Header.svelte';
 	import Projects from '$components/Projects.svelte';
 	import Footer from '$components/Footer.svelte';
+	import Hero from '$components/Hero.svelte';
 </script>
 
 <svelte:head>
@@ -17,10 +18,7 @@
 	<div class="px-5 sm:px-7 md:px-8 lg:px-15 xl:px-15 pt-10 w-full min-w-[320px] max-w-[1680px]">
 		<Header />
 
-		<!-- Hero Section - Mobile First: py-8, md: py-10, lg: py-10 (40px spec) -->
-		<section class="py-8 md:py-10 lg:py-10">
-			<h1 class="heading-large">ILAN KAIM</h1>
-		</section>
+		<Hero />
 
 		<Projects />
 
